@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#container-main{
+    position: absolute;
+    min-height:100vh;
+    width:100%;
+    background:linear-gradient(135deg,black,gray);
+    
+}
+#container{
+     min-height: 12rem;
+     margin:auto;
+     margin-top:15rem;
+     margin-left:45rem;
+     position:relative;
+     width: 35rem;
+     max-width: 60rem;
+     border-radius: 1rem;
+     background-color: rgb(194, 193, 193);
+     color:rgb(0, 0, 0);
+     padding: 0.5rem;
+}
+#heading{
+      display: flex;
+      justify-content: center;
+      margin-bottom:2rem;
+}
+#next{
+    position: relative;
+    height:3rem;
+    width:100%;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    border:1px solid ;
+    background-color: #ffffff;
+}
+#input{
+    border:none;
+    outline:none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    color:black;
+    padding-left: 1rem;
+}
+#btn1{
+    width:7rem;
+    border-radius: 1.5rem;
+    border:none;
+    border-left:1px solid ;
+    font-size: 1rem;
+    background-color:rgb(0, 0, 0);
+    cursor: pointer;
+    color:white;
+}
+#btn1:active{
+    color:gray;
+    font-size:1.2rem;
+}
+#lists{
+    position: relative;
+    margin:2rem;
+    padding-left:1.7rem;
+    color: black;
+    font-size: 1.3rem;
+    
+}
+ul li{
+    margin-bottom: 4px;
+    padding:12px 8px 12px 3px;
+    cursor:pointer;
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    user-select: none;
+    position: relative;
+    list-style: none;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    background-image: url("images/bg.webp");
+    border:1px solid black;
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left:-35px;   
+}
+.tasks{
+    text-decoration: line-through;
+}
+.tasks::before{
+    background-image: url("images/check.webp");
+}
+ul li span{
+    position:absolute;
+    top:0.45px;
+    right:0;
+    height:100%;
+    border-radius: 8px;
+    width:2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+}
+ul li span:hover{
+    background-color: rgb(177, 175, 175);
+}
+ul li span:active{
+    background-color: black;
+    color:gray;
+}
